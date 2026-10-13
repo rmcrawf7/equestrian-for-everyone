@@ -1,0 +1,32 @@
+/* Shared header for inner pages (programs, coaches, gallery, riders, 404) */
+.sn{background:#000;border-bottom:3px solid #9C0000;position:sticky;top:0;z-index:50;font-family:Arial,Helvetica,sans-serif}
+.sn-in{max-width:1200px;margin:auto;padding:0 30px;min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px;position:relative}
+.sn-brand{display:flex;align-items:center;gap:13px;color:#fff;text-decoration:none;font-family:'GFS Didot','Bodoni 72','Didot','Times New Roman',serif;font-size:1.15rem;line-height:1.1}
+.sn-brand img{width:58px;height:58px;object-fit:contain;flex:0 0 auto}
+.sn-brand small{display:block;font:700 .57rem Arial,Helvetica,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#fff;margin-top:3px}
+.sn-links{display:flex;gap:22px}
+.sn-links a{color:#fff;text-decoration:none;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;padding:4px 0;border-bottom:2px solid transparent}
+.sn-links a:hover,.sn-links a[aria-current="page"]{border-bottom-color:#9C0000}
+.sn-links a:focus-visible,.sn-brand:focus-visible,.sn-toggle:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.sn-toggle{display:none;background:transparent;border:1px solid #555;color:#fff;width:44px;height:40px;font-size:1.35rem;line-height:1;cursor:pointer}
+@media(max-width:960px){
+  .sn-toggle{display:block}
+  .sn-links{display:none;position:absolute;top:100%;left:0;right:0;background:#000;border-top:1px solid #333;border-bottom:3px solid #9C0000;padding:10px 30px 18px;flex-direction:column;gap:0}
+  .sn-links.open{display:flex}
+  .sn-links a{padding:13px 0;font-size:.78rem;border-bottom:1px solid #222}
+  .sn-links a:last-child{border-bottom:0}
+  .sn-links a[aria-current="page"]{color:#ff9d9d;border-bottom-color:#222}
+}
+@media(max-width:400px){.sn-in{padding:0 20px}.sn-brand{font-size:.86rem;gap:7px}.sn-brand img{width:44px;height:44px}.sn-brand small{font-size:.48rem}}
+
+/* "Next step" call-to-action band */
+.next-step{background:#9C0000;color:#fff;padding:80px 0;text-align:center;font-family:Arial,Helvetica,sans-serif}
+.next-step .ns-in{max-width:760px;margin:auto;padding:0 30px}
+.next-step .ns-eyebrow{font-size:.72rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:#fff;opacity:.85}
+.next-step h2{font-family:'GFS Didot','Bodoni 72','Didot','Times New Roman',serif;font-weight:400;line-height:1.03;font-size:clamp(2.3rem,4.5vw,3.8rem);margin:12px 0 18px;color:#fff}
+.next-step p{color:#f1dede;font-size:1.05rem;line-height:1.6;margin:0 0 28px}
+.ns-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.ns-btn{display:inline-block;padding:13px 20px;border:1px solid #fff;color:#fff;text-decoration:none;font-size:.75rem;letter-spacing:.11em;text-transform:uppercase;font-weight:800}
+.ns-btn.fill{background:#fff;color:#9C0000}
+.ns-btn:hover{background:#fff;color:#9C0000}
+.ns-btn:focus-visible{outline:2px solid #fff;outline-offset:3px}
